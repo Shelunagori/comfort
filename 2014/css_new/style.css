@@ -1,0 +1,289 @@
+#mainContainer
+{
+min-width: 740px;
+max-width:1100px;
+padding: 0;
+margin-left: auto;
+  margin-right: auto;
+background-color:#FFF;
+border:#ffc90b 1px solid;
+}
+
+#header
+	{
+	background-position: top;
+	background-repeat: repeat-x;
+	margin: 0;
+	padding: 10px;
+	padding-bottom:0px;
+	}
+		
+/* You must include some sort of border on this rule.  Otherwise IE 6.0 will not */
+/* render the background image or color properly.                                */
+#sideBarContentWrapper
+	{
+	background-image: url(columns.bg.gif);
+	background-repeat: repeat-y;
+	}
+	
+#contentContainer
+	{
+	float: left;
+	width: 100%;
+	}
+	
+#content
+	{
+	padding: 10px;
+	}
+
+#sideBar
+	{
+	float: left;
+	width: 190px;
+	margin-left: -100%;
+	border-right:#000 5px solid;
+	}
+
+/* IE 6.0: For some reason, if you just specify padding here it'll add 10 px  */
+/* to the entire layout and cause the page to scroll horizontally. So we have */
+/* to specify the width and then set a margin on it.  The width is equal to   */
+/* the width of the column, 190px - the 10px margin * 2                       */
+#sideBar p
+        {
+        margin: 10px auto;
+        width: 170px;
+        }
+
+#sideBarContentWrapper > #sideBar p
+	{
+	padding: 10px;
+	margin: 0;
+	}
+
+/* We have to include some sort of height attribute for IE 6 and 7 to render  */
+/* the columns background properly, and prevent additional, unwanted          */
+/* whitespace from being rendered.                                            */
+#footer
+	{
+	height: 1%;
+	margin: 0;
+	padding: 20px 10px;
+	clear: both;
+	border-bottom: #000000 1px solid;
+	border-top: #000000 1px solid;
+	background-color: #d2cbbd;
+	}
+
+/*
+ * ----------------------------------------------------------------------------
+ * NBI Layout/Design styles
+ */
+
+body
+        {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 0px;
+	margin: 0;
+	padding: 0;
+	background: none repeat scroll 0% 0% rgb(51, 51, 51);
+        }
+
+h1, h2, h4
+        {
+        text-align: center;
+        color: #ffffff;
+        }
+
+h1
+	{
+	font-size: 2em;
+	line-height: 1em;
+	}
+
+h4 a, h4 a:visited
+        {
+        color: #d9dcec;
+        }
+
+h4 a:hover
+        {
+        color: #ffffff;
+        text-decoration: none;
+        }
+
+h2
+        {
+        font-size: 18px;
+        }
+
+p
+        {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        }
+
+.clear_both
+        {
+        clear: both;
+        }
+
+.code
+	{
+	font-family:"Courier New", Courier, monospace;
+	}
+
+#w3cButtons
+	{
+	width: 196px;
+	margin: 20px auto;
+	padding: 0;
+	}
+	
+#markupBtn
+	{
+	margin: 0 10px 0 0;
+	padding: 0;
+	width: 88px;
+	float: left;
+	}
+	
+#cssBtn
+	{
+	margin: 0 0 0 10px;
+	padding: 0;
+	width: 88px;
+	float: left;
+	}
+	
+
+#sideBar ul
+	{
+	margin: 0;
+	padding: 0;
+	border-bottom: #978e7c 1px solid;
+	width: 189px;
+	}
+
+/*
+ * IE fix for additional padding that otherwise get's rendered between list items
+ */
+#sideBar ul li
+	{
+	height: 1%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	}
+
+#sideBarContentContainer> #sideBar
+	{
+	height: auto;
+	}
+	
+#sideBar ul li a, #sideBar ul li a:visited
+	{
+	display: block;
+	border-top: #978e7c 1px solid;
+	padding: 5px 10px;
+	background-image: url(sidenav.bg.gif);
+	background-position: bottom;
+	background-repeat:repeat-x;
+	background-color: #fffbf7;
+	color: #59503e;
+	text-decoration: none;
+	font-weight: bold;
+	}
+	
+#sideBar ul li a:hover
+	{
+	color: #000000;
+	text-decoration: underline;
+	}
+
+.small_text{
+	font-size:10px;}
+	
+a{
+	text-decoration:underline;
+	}
+
+input{
+	height:25px;
+	width:250px;
+	font-size:14px;
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192) rgb(217, 217, 217) rgb(217, 217, 217);
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-image: none;
+    -moz-box-sizing: border-box;
+    border-radius: 1px 1px 1px 1px;
+}
+
+input:focus{
+    outline: medium none;
+    border: 1px solid rgb(77, 144, 254);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+select{
+	height:25px;
+	width:250px;
+	font-size:14px;
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192) rgb(217, 217, 217) rgb(217, 217, 217);
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-image: none;
+    -moz-box-sizing: border-box;
+    border-radius: 1px 1px 1px 1px;
+}
+
+select:focus{
+    outline: medium none;
+    border: 1px solid rgb(77, 144, 254);
+
+}
+
+td{
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:4px;
+}
+
+#cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #fff; z-index:9999;
+    font-size: 18px; text-align: center; padding-top: 200px; color: #000; font-family:Calibri;
+}
+.error{
+	color:#C33;
+	font-weight:bold;
+}
+
+.success{
+	color:#390;
+	font-weight:bold;
+}
+
+.text{
+	font-size:12px;
+	}
+#help-wrapper div {
+  visibility: hidden;
+}
+
+/* It's better to use a class to highlight the selection,
+   in case you feel like adding more styles later (like a border or something).
+ */
+.current-help {
+  visibility: visible;
+}
